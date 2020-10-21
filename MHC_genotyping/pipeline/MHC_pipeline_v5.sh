@@ -1,10 +1,10 @@
 #!/bin/sh
 
-read -p "input Fastqfile:" fastqfile
-read -p "input Mamu or Mafa:" species
-read -p "input runid (any characters):" runid
-read -p "input barcodeid (any characters):" barcodeid
-read -p "input samplename (any characters):" sampleid
+read -p "enter Fastqfile:" fastqfile
+read -p "enter Mamu or Mafa:" species
+read -p "enter runid (any characters):" runid
+read -p "enter barcodeid (any characters):" barcodeid
+read -p "enter samplename (any characters):" sampleid
 
 length=150
 qv=20
@@ -33,3 +33,5 @@ blastn -db $blast_reference_fasta -query $runid"_"$barcodeid"_"$length"bp_q"$qv"
 python3 pipeline/count_multihit_v5.py $length $runid"_"$barcodeid"_"$length"bp_q"$qv"p"$percent"_blast_eval1e10_perc98.txt" $runid"_"$barcodeid"_"$length"bp_q"$qv"p"$percent".fasta" $species
 
 python3 pipeline/count_uniquehit_v5.py $length $runid"_"$barcodeid"_"$length"bp_q"$qv"p"$percent"_blast_eval1e10_perc98.txt" $runid"_"$barcodeid"_"$length"bp_q"$qv"p"$percent".fasta" "count_multihit_"$length".txt" $species
+
+python3 pipeline/sort.py $sampleid
