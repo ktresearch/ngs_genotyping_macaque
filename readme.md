@@ -2,7 +2,7 @@
 
 ---
 
-This repository contains all code to reproduce the analysis in the article "Development and evaluation of a rapid and cost-efficient NGS-based MHC class I genotyping method fro macaques by using a prevalent short-read sequencer".
+This repository contains all code to reproduce the analysis in the article "Development and evaluation of a rapid and cost-efficient NGS-based MHC class I genotyping method for macaques by using a prevalent short-read sequencer".
 
 ### requirements:
 
