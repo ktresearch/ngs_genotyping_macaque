@@ -18,7 +18,7 @@ This repository contains all code to reproduce the analysis in the article "Deve
 (2) Please copy fastq file to MHC_genotyping directory.  
 (3) Please move MHC_genotyping or MHC_denovo directory and run .sh file like below.  
 
-> $ sh pipeline/MHC_pipeline_v5.sh
+> $ sh pipeline/MHC_pipeline_v5.sh  
 > $ sh pipeline/MHC_pipeline_denovo_v3.sh (for novel allele detection)    
 
 (4) Please enter information following the instructions on the screen.  
