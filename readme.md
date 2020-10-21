@@ -10,7 +10,7 @@ This repository contains all code to reproduce the analysis in the article "Deve
 - cutadapt  
   https://cutadapt.readthedocs.io/en/stable/  
 - python (version >= 3.7)  
-- perl (version5)  
+- perl 5  
 
 ### How to run codes:
 
