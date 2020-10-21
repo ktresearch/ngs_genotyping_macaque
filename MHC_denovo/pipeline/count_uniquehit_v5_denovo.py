@@ -118,7 +118,7 @@ for header in count_tmp.keys():
             depth[cols[1]].setdefault(i, 0)
             depth[cols[1]][i] += 1
 
-#uniformityを算出する
+#calculate uniformity
 with open(outputfile,'w') as out:
     print('MHC_type', 'normalized_count', 'uniformity', 'TotalReads_' + str(totalreads), sep='\t', file=out)
     for allele in count.keys():
