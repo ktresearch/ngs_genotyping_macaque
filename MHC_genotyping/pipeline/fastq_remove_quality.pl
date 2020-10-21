@@ -6,7 +6,7 @@ my $min_qv = shift @ARGV;
 my $pass_percentage = shift @ARGV;
 my $inputfile = shift @ARGV;
 my $outputfile = shift @ARGV;
-my $phredfile = "phred.txt";
+my $phredfile = "pipeline/phred.txt";
 print "minimum_QV $min_qv\n";
 print "pass_QVcheck_percentage $pass_percentage\n";
 print "Input_file $inputfile\n";
@@ -14,7 +14,7 @@ print "Output_file $outputfile\n";
 
 
 my %phred = ();
-open (IN, "phred.txt") || die $!;
+open (IN, "pipeline/phred.txt") || die $!;
 while (my $line = <IN>) {
 	chomp $line;
 	my @vals = split(/\t/, $line);
